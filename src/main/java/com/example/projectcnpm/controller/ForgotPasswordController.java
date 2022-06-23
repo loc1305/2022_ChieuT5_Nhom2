@@ -24,20 +24,25 @@ public class ForgotPasswordController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("username");
         String email = request.getParameter("email");
-
+// 5. Gọi checkAccountExist(username,email) -> 6. return Account
         Account a = AccountService.getInstance().checkAccountExist(username,email);
         String subject = "Forgot Password";
 
 
         if(a!=null){
+//            7. Gọi randomPassword() -> 8. return newPassword
             String newPass = Random.randomPassword();
+//            9. Gọi changePassword(account,newPass) -> 10. Thay đổi mk người dùng thành newPass
             AccountService.getInstance().changePassword(a,newPass);
             String content = "Your password is " + newPass;
+//            11. Gọi sendMail() -> 12. Một email kèm mật khẩu mới được gửi đến email người dùng
             Mail.sendMail(email,subject,content);
+//            13. Gửi thông báo lên trang forgotpassword
             request.setAttribute("message", "Your password has been sent. Please check in your email and login again.");
             request.setAttribute("success","success");
             request.getRequestDispatcher("forgotpassword.jsp").forward(request,response);
         }else{
+//            5.2. Gửi thông báo lên trang forgotpassword (trường hợp thông tin username và email không chính xác)
             request.setAttribute("message", "Username and email do not match. Please check again!!");
             request.setAttribute("success","");
             request.getRequestDispatcher("forgotpassword.jsp").forward(request,response);

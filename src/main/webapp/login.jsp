@@ -25,6 +25,7 @@
                 <div class="signin-image">
                     <figure><img src="images/signin-image.jpg" alt="sing up image"></figure>
                     <a href="#" class="signup-image-link">Create an account</a>
+<%--                   1,2.  Chuyển đén trang forgotpassword khi người dùng bấm vào nút Forgot Password--%>
                     <a href="forgotpassword" class="signup-image-link">Forgot Password</a>
                 </div>
 
