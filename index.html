@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="vi" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Trang chủ</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" type="text/css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css">
+</head>
+
+<body>
+<!-- header -->
+<nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
+    <div class="container">
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Sản phẩm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Liên hệ</a>
+                </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0" method="get" action="pages/search.html">
+                <input class="form-control mr-sm-2" type="text" placeholder="Tìm kiếm" aria-label="Search"
+                       name="keyword_tensanpham">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+            </form>
+        </div>
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="">Giỏ hàng</a>
+            </li>
+            <li class="nav-item text-nowrap">
+                <!-- Nếu chưa đăng nhập thì hiển thị nút Đăng nhập -->
+                <a class="nav-link" href="">Đăng nhập</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- end header -->
+<main role="main">
+
+    <!-- Danh sách sản phẩm -->
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Danh sách Sản phẩm</h1>
+        </div>
+    </section>
+
+    <!-- Giải thuật duyệt và render Danh sách sản phẩm theo dòng, cột của Bootstrap -->
+    <div class="danhsachsanpham py-5 bg-light">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="card mb-4 shadow-sm">
+                        <a href="">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="550"
+                                 src="./assets/img/product/Galaxy-S22.jpg">
+                        </a>
+                        <div class="card-body">
+                            <a href="">
+                                <h5>Samsung Galaxy S22 Ultra 5G 128G</h5>
+                            </a>
+                            <h6>Điện thoại</h6>
+                            <p class="card-text">Sản phẩm của Samsung năm 2022</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a class="btn btn-sm btn-outline-secondary"
+                                       href="">Xem
+                                        chi tiết</a>
+                                </div>
+                                <small class="text-muted text-right">
+                                    <s>28,600,000.00</s>
+                                    <b>27,990,000.00 vnđ</b>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card mb-4 shadow-sm">
+                        <a href="">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="550"
+                                 src="./assets/img/product/ipad-pro-11.jpg">
+                        </a>
+                        <div class="card-body">
+                            <a href="">
+                                <h5>Apple Ipad 11 inch Wifi 128GB</h5>
+                            </a>
+                            <h6>Máy tính bảng</h6>
+                            <p class="card-text">Được Apple trang bị vi xử lý A12Z Bionic mới nhất</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a class="btn btn-sm btn-outline-secondary"
+                                       href="">Xem
+                                        chi tiết</a>
+                                </div>
+                                <small class="text-muted text-right">
+                                    <s>22,300,000.00</s>
+                                    <b>21,990,000.00 vnđ</b>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="card mb-4 shadow-sm">
+                        <a href="">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="550"
+                                 src="./assets/img/product/ip13-pro.jpg">
+                        </a>
+                        <div class="card-body">
+                            <a href="">
+                                <h5>Apple iPhone 13 Pro 256GB</h5>
+                            </a>
+                            <h6>Điện thoại</h6>
+                            <p class="card-text">Màn hình Super Retina XDR với công nghệ ProMotion giúp tinh chỉnh tần số quét 10 - 120Hz</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a class="btn btn-sm btn-outline-secondary"
+                                       href="">Xem
+                                        chi tiết</a>
+                                </div>
+                                <small class="text-muted text-right">
+                                    <s>33,853,000.00</s>
+                                    <b>33,353,000.00 vnđ</b>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card mb-4 shadow-sm">
+                        <a href="">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="550"
+                                 src="./assets/img/product/ip13.png">
+                        </a>
+                        <div class="card-body">
+                            <a href="">
+                                <h5>Apple iPhone 13 256GB Blue</h5>
+                            </a>
+                            <h6>Điện thoại</h6>
+                            <p class="card-text">Trang bị tấm nền Super Retina XDR OLED</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a class="btn btn-sm btn-outline-secondary"
+                                       href="">Xem
+                                        chi tiết</a>
+                                </div>
+                                <small class="text-muted text-right">
+                                    <s>0.00</s>
+                                    <b>24,500,000.00 vnđ</b>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="card mb-4 shadow-sm">
+                        <a href="=">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="550"
+                                 src="./assets/img/product/samsung-galaxy-tab-s7.jpg">
+                        </a>
+                        <div class="card-body">
+                            <a href="=">
+                                <h5>Samsung Galaxy Tab S7 128GB</h5>
+                            </a>
+                            <h6>Máy tính bảng</h6>
+                            <p class="card-text">Màn hình 120 Hz siêu mượt</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a class="btn btn-sm btn-outline-secondary"
+                                       href="">Xem
+                                        chi tiết</a>
+                                </div>
+                                <small class="text-muted text-right">
+                                    <s>18,900,000.00</s>
+                                    <b>15,990,000.00 vnđ</b>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- End block content -->
+</main>
+
+<!-- footer -->
+<footer class="footer mt-auto py-3">
+    <div class="container">
+        <span>Bản quyền © bởi <a href="https://nentang.vn">Nền Tảng</a> - <script>document.write(new Date().getFullYear());</script>.</span>
+        <span class="text-muted">Hành trang tới Tương lai</span>
+
+        <p class="float-right">
+            <a href="#">Về đầu trang</a>
+        </p>
+    </div>
+</footer>
+<!-- end footer -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/popperjs/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
