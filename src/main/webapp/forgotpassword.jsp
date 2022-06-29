@@ -32,7 +32,7 @@
 
                 <div class="signin-form">
                     <h2 class="form-title">Forgot Password</h2>
-<%--                    14, 5.3 Hiển thị thông báo lên màn hình. --%>
+<%--                    14, 5.3. Hiển thị thông báo lên màn hình. --%>
                     <h4 class="${success.length() > 0 ? "text-success": "text-danger"}">${message}</h4>
                     <form  class="login-form" id="login-form" action="forgotpassword" method="post">
                         <div class="input-line">
