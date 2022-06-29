@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background-color: white;
+    height: 750px;
+}
+#logo{
+    width: 1200px;
+    height: 700px;
+    margin-right: 50px;
+}
+ h4{
+    margin-left: -180px;
+
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: 1s;
+}
+h3 {
+    font-size: 35px;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+#container {
+    background-image: url("img/h1.jpg");
+    width: 1000px;
+    margin: auto;
+    height: 800px;
+    display: flex;
+}
+
+#container nav {
+    width: 25%;
+    height: 80%;
+    border: 8px solid #FFFFFF;
+    border-radius: 5px;
+    background: #FFFFFF;
+    margin: auto;
+
+
+}
+
+
+#container nav #contact {
+    text-align: center;
+}
+
+#inp #emailorname, #password {
+    height: 40px;
+    width: 80%;
+    border-radius: 20px;
+    padding: 8px;
+    border: 1px solid lightsteelblue;
+
+
+}
+
+#inp .poiter::placeholder {
+    color: black;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+
+#inp #password {
+    margin: 15px 0px;
+
+}
+
+#sign #in {
+    height: 45px;
+    width: 38%;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    background: #BD59D7;
+    border: 1px solid lightsteelblue;
+}
+
+#orlogin {
+    padding-top: 40px;
+}
+
+#orlogin > p {
+    text-align: center;
+    color: cadetblue;
+}
+
+#orlogin .orther li {
+    display: inline-block;
+
+}
+
+#orlogin .orther li img {
+    height: 30px;
+
+
+}
+
+.fa {
+    border-radius: 50%;
+    border: 1px solid lightsteelblue;
+    margin-left: 55px;
+}
+
+.google {
+    border-radius: 50%;
+    margin-left: 10px;
+    border: 1px solid lightsteelblue;
+}
+
+#last {
+    padding-top: 70px;
+    text-align: center;
+}
+
+#last a {
+    text-decoration: none;
+    font-size: 20px;
+    color: cadetblue;
+}
+
+.poiter:hover {
+    cursor: pointer;
+}
